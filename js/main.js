@@ -1,45 +1,42 @@
-var presidents = [
+// Part A
+function howdy() {
+  console.log( "Hanna Preston says hi!" );
+}
 
-  {
-    firstName: 'Donald',
-    lastName: 'Trump',
-    termLength: 1,
-    party: 'Republican',
-    yearsOfPresidency: '2017-2020'
-  },
+howdy();
 
-  {
-    firstName: 'Barack',
-    lastName: 'Obama',
-    termLength: 2,
-    party: 'Democrat',
-    yearsOfPresidency: '2009-2016'
-  },
 
-  {
-    firstName: 'George W.',
-    lastName: 'Bush',
-    termLength: 2,
-    party: 'Republican',
-    yearsOfPresidency: '2001-2008'
-  },
+// Part B
+var numba = function ( string ) {
 
-  {
-    firstName: 'Bill',
-    lastName: 'Clinton',
-    termLength: 2,
-    party: 'Democrat',
-    yearsOfPresidency: '1993-2000'
-  },
+    if (string.length < 7 ){
+        console.log( "What a short little word!" );
+    }
 
-  {
-    firstName: 'George H.W.',
-    lastName: 'Bush',
-    termLength: 1,
-    party: 'Republican',
-    yearsOfPresidency: '1989-1992'
-  },
+    else if (string.length > 7 ){
+        console.log( "I'm sorry, but that’s too many to count." );
+    }
 
-];
+    else {
+        console.log( "7, what a perfect choice!" );
+    }
 
-console.log(presidents[2].firstName + ' ' + presidents[2].lastName);
+};
+
+numba("7");
+
+numba("seventy");
+
+numba("university");
+
+
+// Part C
+function inception(display, favMovie) {
+  display(favMovie);
+}
+
+function display() {
+  console.log("The Money Pit is a fantastic movie.");
+}
+
+inception(display);
